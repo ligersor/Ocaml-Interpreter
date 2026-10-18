@@ -1,0 +1,14 @@
+(library
+ (name project5)
+ (modules token ast lexer parser eval)
+ (libraries str))
+
+(executable
+ (name main)
+ (modules main)
+ (libraries project5))
+
+(test
+ (name student)
+ (modules student)
+ (libraries project5 ounit2))
